@@ -38,6 +38,11 @@ class Module
                         $serviceManager->get(PostTable\Post::class)
                     );
                 },
+                PostService\Posts\NumberOfPosts::class => function ($serviceManager) {
+                    return new PostService\Posts\NumberOfPosts(
+                        $serviceManager->get(PostTable\Post::class)
+                    );
+                },
                 PostTable\Post::class => function ($serviceManager) {
                     return new PostTable\Post(
                         $serviceManager->get('main')
