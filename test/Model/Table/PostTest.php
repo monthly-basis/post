@@ -99,6 +99,34 @@ class PostTest extends TableTestCase
         );
     }
 
+    public function testSelectCountWhereToUserId()
+    {
+        $this->assertSame(
+            0,
+            $this->postTable->selectCountWhereToUserId(123)
+        );
+        $this->userTable->insert(
+            'username',
+            'password hash'
+        );
+        $this->userTable->insert(
+            'username2',
+            'password hash'
+        );
+        $this->userTable->insert(
+            'username3',
+            'password hash'
+        );
+        $this->postTable->insert(1, 2, 'message');
+        $this->postTable->insert(2, 1, 'another message');
+        $this->postTable->insert(1, 2, 'another message');
+        $this->postTable->insert(3, 1, 'another message');
+        $this->assertSame(
+            2,
+            $this->postTable->selectCountWhereToUserId(1)
+        );
+    }
+
     public function testSelectWhereToUserId()
     {
         $this->assertEmpty(
