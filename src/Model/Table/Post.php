@@ -55,6 +55,21 @@ class Post
         return (int) $row['count'];
     }
 
+    public function selectCountWhereToUserId(int $toUserId)
+    {
+        $sql = '
+            SELECT COUNT(*) AS `count`
+              FROM `post`
+             WHERE `post`.`to_user_id` = :toUserId
+                 ;
+        ';
+        $parameters = [
+            'toUserId' => $toUserId,
+        ];
+        $row = $this->adapter->query($sql)->execute($parameters)->current();
+        return (int) $row['count'];
+    }
+
     /**
      * @return ArrayObject|bool
      *
