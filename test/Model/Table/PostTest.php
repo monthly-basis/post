@@ -16,7 +16,7 @@ class PostTest extends TableTestCase
      */
     protected $sqlPath = __DIR__ . '/../../..' . '/sql/leogalle_test/post/';
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $configArray     = require(__DIR__ . '/../../../config/autoload/local.php');
         $configArray     = $configArray['db']['adapters']['leogalle_test'];
@@ -69,7 +69,7 @@ class PostTest extends TableTestCase
         $this->userTable->insert(
             'username',
             'password hash',
-            'full name'
+            '1000-01-01 00:00:00'
         );
 
         try {
@@ -82,7 +82,7 @@ class PostTest extends TableTestCase
         $this->userTable->insert(
             'another_username',
             'password hash',
-            'another full name'
+            '1000-01-01 00:00:00'
         );
 
         $this->assertSame(
@@ -107,15 +107,18 @@ class PostTest extends TableTestCase
         );
         $this->userTable->insert(
             'username',
-            'password hash'
+            'password hash',
+            '1980-01-12 12:34:56'
         );
         $this->userTable->insert(
             'username2',
-            'password hash'
+            'password hash',
+            '1980-01-12 12:34:56'
         );
         $this->userTable->insert(
             'username3',
-            'password hash'
+            'password hash',
+            '1000-01-01 00:00:00'
         );
         $this->postTable->insert(1, 2, 'message');
         $this->postTable->insert(2, 1, 'another message');
@@ -135,15 +138,18 @@ class PostTest extends TableTestCase
 
         $this->userTable->insert(
             'username',
-            'password hash'
+            'password hash',
+            '1980-01-01 01:23:45'
         );
         $this->userTable->insert(
             'username2',
-            'password hash'
+            'password hash',
+            '1980-01-01 01:23:45'
         );
         $this->userTable->insert(
             'username3',
-            'password hash'
+            'password hash',
+            '1980-01-01 01:23:45'
         );
         $this->postTable->insert(1, 2, 'message');
         $this->postTable->insert(3, 2, 'another message');
@@ -178,7 +184,9 @@ class PostTest extends TableTestCase
         );
 
         $this->assertEmpty(
-            $this->postTable->selectWhereToUserId(1),
+            $this->postTable->selectWhereToUserId(1)
+        );
+        $this->assertEmpty(
             $this->postTable->selectWhereToUserId(3)
         );
     }
