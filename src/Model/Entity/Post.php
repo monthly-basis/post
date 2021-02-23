@@ -3,7 +3,7 @@ namespace LeoGalleguillos\Post\Model\Entity;
 
 use DateTime;
 use LeoGalleguillos\Post\Model\Entity as PostEntity;
-use LeoGalleguillos\User\Model\Entity as UserEntity;
+use MonthlyBasis\User\Model\Entity as UserEntity;
 
 class Post
 {

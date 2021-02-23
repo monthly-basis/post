@@ -2,9 +2,9 @@
 namespace LeoGalleguillos\Post\Model\Service;
 
 use ArrayObject;
-use LeoGalleguillos\User\Model\Entity as UserEntity;
+use MonthlyBasis\User\Model\Entity as UserEntity;
 use LeoGalleguillos\Post\Model\Factory as PostFactory;
-use LeoGalleguillos\User\Model\Service as UserService;
+use MonthlyBasis\User\Model\Service as UserService;
 use LeoGalleguillos\Post\Model\Table as PostTable;
 
 class Posts

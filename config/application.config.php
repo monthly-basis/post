@@ -2,12 +2,12 @@
 
 return [
     'modules' => [
-        'LeoGalleguillos\Flash',
+        'Laminas\Db',
+        'Laminas\Router',
+        'MonthlyBasis\Flash',
         'LeoGalleguillos\Post',
-        'LeoGalleguillos\String',
-        'LeoGalleguillos\User',
-        'Zend\Db',
-        'Zend\Router',
+        'MonthlyBasis\String',
+        'MonthlyBasis\User',
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => array(

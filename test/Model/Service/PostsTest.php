@@ -2,7 +2,7 @@
 namespace LeoGalleguillos\PostTest\Model\Service;
 
 use ArrayObject;
-use LeoGalleguillos\User\Model\Entity as UserEntity;
+use MonthlyBasis\User\Model\Entity as UserEntity;
 use LeoGalleguillos\Post\Model\Factory as PostFactory;
 use LeoGalleguillos\Post\Model\Service as PostService;
 use LeoGalleguillos\Post\Model\Table as PostTable;
