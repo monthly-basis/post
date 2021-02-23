@@ -1,5 +1,5 @@
 {
-    "name": "leo-galleguillos/post",
+    "name": "monthly-basis/post",
     "license": "MIT",
     "require": {
         "monthly-basis/flash": "^2.0",
@@ -11,8 +11,8 @@
     },
     "autoload": {
         "psr-4": {
-            "LeoGalleguillos\\Post\\": "src/",
-            "LeoGalleguillos\\PostTest\\": "test/"
+            "MonthlyBasis\\Post\\": "src/",
+            "MonthlyBasis\\PostTest\\": "test/"
         }
     }
 }

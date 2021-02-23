@@ -1,9 +1,9 @@
 <?php
-namespace LeoGalleguillos\Post\Model\Service;
+namespace MonthlyBasis\Post\Model\Service;
 
 use ArrayObject;
-use LeoGalleguillos\Post\Model\Entity as PostEntity;
-use LeoGalleguillos\Post\Model\Table as PostTable;
+use MonthlyBasis\Post\Model\Entity as PostEntity;
+use MonthlyBasis\Post\Model\Table as PostTable;
 use MonthlyBasis\User\Model\Entity as UserEntity;
 use MonthlyBasis\User\Model\Factory as UserFactory;
 use MonthlyBasis\User\Model\Service as UserService;

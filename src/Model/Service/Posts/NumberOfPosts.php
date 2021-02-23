@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\Post\Model\Service\Posts;
+namespace MonthlyBasis\Post\Model\Service\Posts;
 
 use MonthlyBasis\User\Model\Entity as UserEntity;
-use LeoGalleguillos\Post\Model\Table as PostTable;
+use MonthlyBasis\Post\Model\Table as PostTable;
 
 class NumberOfPosts
 {

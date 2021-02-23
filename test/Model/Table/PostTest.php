@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\PostTest\Model\Table;
+namespace MonthlyBasis\PostTest\Model\Table;
 
 use ArrayObject;
-use LeoGalleguillos\Post\Model\Table as PostTable;
+use MonthlyBasis\Post\Model\Table as PostTable;
 use MonthlyBasis\User\Model\Table as UserTable;
 use MonthlyBasis\UserTest\TableTestCase;
 use Laminas\Db\Adapter\Adapter;

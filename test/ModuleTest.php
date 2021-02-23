@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\PostTest;
+namespace MonthlyBasis\PostTest;
 
-use LeoGalleguillos\Post\Module;
+use MonthlyBasis\Post\Module;
 use PHPUnit\Framework\TestCase;
 use Laminas\Mvc\Application;
 

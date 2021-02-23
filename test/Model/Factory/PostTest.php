@@ -1,10 +1,10 @@
 <?php
-namespace LeoGalleguillos\PostTest\Model\Factory;
+namespace MonthlyBasis\PostTest\Model\Factory;
 
 use ArrayObject;
 use DateTime;
-use LeoGalleguillos\Post\Model\Entity as PostEntity;
-use LeoGalleguillos\Post\Model\Factory as PostFactory;
+use MonthlyBasis\Post\Model\Entity as PostEntity;
+use MonthlyBasis\Post\Model\Factory as PostFactory;
 use MonthlyBasis\User\Model\Entity as UserEntity;
 use PHPUnit\Framework\TestCase;
 

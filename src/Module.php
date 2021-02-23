@@ -1,10 +1,10 @@
 <?php
-namespace LeoGalleguillos\Post;
+namespace MonthlyBasis\Post;
 
-use LeoGalleguillos\Post\Model\Factory as PostFactory;
-use LeoGalleguillos\Post\Model\Service as PostService;
-use LeoGalleguillos\Post\Model\Table as PostTable;
-use LeoGalleguillos\Post\View\Helper as PostHelper;
+use MonthlyBasis\Post\Model\Factory as PostFactory;
+use MonthlyBasis\Post\Model\Service as PostService;
+use MonthlyBasis\Post\Model\Table as PostTable;
+use MonthlyBasis\Post\View\Helper as PostHelper;
 
 class Module
 {

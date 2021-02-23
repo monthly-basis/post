@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\Post\Model\Table;
+namespace MonthlyBasis\Post\Model\Table;
 
 use ArrayObject;
 use Laminas\Db\Adapter\Adapter;

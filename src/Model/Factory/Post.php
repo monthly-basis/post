@@ -1,9 +1,9 @@
 <?php
-namespace LeoGalleguillos\Post\Model\Factory;
+namespace MonthlyBasis\Post\Model\Factory;
 
 use ArrayObject;
 use DateTime;
-use LeoGalleguillos\Post\Model\Entity as PostEntity;
+use MonthlyBasis\Post\Model\Entity as PostEntity;
 use MonthlyBasis\User\Model\Entity as UserEntity;
 use MonthlyBasis\User\Model\Factory as UserFactory;
 
